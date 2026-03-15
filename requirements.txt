@@ -1,0 +1,20 @@
+# Enterprise Retail Lakehouse Platform — Top-level Python dependencies
+# Install: pip install -r requirements.txt
+# Module-specific requirements live in each module's requirements.txt
+
+# Config
+python-dotenv>=1.0.0
+
+# MinIO / S3 (ingestion)
+minio>=7.2.0
+
+# PostgreSQL (warehouse loader)
+psycopg2-binary>=2.9.9
+
+# Config and HTTP (shared, ingestion)
+PyYAML>=6.0
+requests>=2.31.0
+
+# Data generator (optional)
+pandas>=2.0.0
+faker>=22.0.0

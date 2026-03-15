@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: warehouse_staging
+    description: PostgreSQL staging tables loaded from Gold parquet
+    schema: staging
+    tables:
+      - name: dim_product
+        description: Product dimension (raw load)
+      - name: dim_store
+        description: Store dimension (raw load)
+      - name: dim_customer
+        description: Customer dimension (raw load)
+      - name: fact_sales
+        description: Sales transactions fact (raw load)
+      - name: fact_inventory_daily
+        description: Daily inventory snapshots (raw load)
